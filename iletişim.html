@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/50px-LEGO_logo.svg.png"
+          alt="LEGO LOGO"
+        />
+        LEGO MARVEL
+      </h1>
+    </header>
+
+    <div>
+      <section>
+        <nav>
+          🔥 <a href="index.html">Anasayfa</a> ||
+          <a href="katalog.html">Kategori</a> ||
+          <a href="hakkımızda.html">Hakkımızda</a> ||
+          <a href="iletişim.html">Satın Al</a>
+        </nav>
+      </section>
+    </div>
+    <h2>İLETİŞİM FORMU</h2>
+    <div>
+      <form action="/">
+        <div>
+          <label for="isim">Kullanıcı Adı:</label>
+          <input type="text" placeholder="Ad" name="isim" id="isim" required />
+        </div>
+        <div>
+          <label for="sif"
+            >Şifre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="password" placeholder="Şifre" id="sif" required />
+        </div>
+        <div>
+          <label for="mail"
+            >E-Posta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            type="text"
+            name="mail"
+            placeholder="Mail Adresi"
+            id="mail"
+            required
+          />
+        </div>
+        <div>
+          <label for="tel">Telefon Nu.:&nbsp;&nbsp;&nbsp;</label>
+          <input
+            type="number"
+            placeholder="Telefon numarası"
+            name="tel"
+            id="tel"
+            required
+          />
+        </div>
+        <div>
+          <label for="adr">Adres:</label><br />
+          <textarea name="adres" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="char">Marvel Karakterini Seçiniz:</label>
+          <select name="char" id="char">
+            <option value="" required></option>
+            <option value="thor">THOR</option>
+            <option value="bat" disabled>ÖRÜMCEK ADAM</option>
+            <option value="hulk" disabled>HULK</option>
+            <option value="ironman" disabled>İRONMAN</option>
+            <option value="captan" disabled>CAPTAN AMERİKA</option>
+            <option value="panter" disabled>KARA PANTER</option>
+            <option value="antman" disabled>KARINCA ADAM</option>
+          </select>
+        </div>
+        <div>
+          <label for="mik"
+            >Miktar:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            type="number"
+            name="miktar"
+            id="mik"
+            required
+            min="1"
+            max="10"
+          />
+        </div>
+        <div>
+          <label for="renk"
+            >Renk
+            Seçiniz:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="color" name="Renk" id="renk" required />
+        </div>
+        <div>
+          <h4>KART BİLGİLERİ</h4>
+          <label for="ad">Kart Üzerindeki Ad Soyad:</label>
+          <input type="text" name="kartisimsoyisim" id="ad" required />
+        </div>
+        <div>
+          <label for="kn"
+            >Kart
+            Numarası:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="number" name="kartnumarası" id="kn" required />
+        </div>
+        <div>
+          <label for="gs"
+            >Güvelik
+            Şifresi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="number" name="güvenlikşif" id="gs" required />
+        </div>
+        <div>
+          <h4>ÖDEME YÖNTEMİ</h4>
+          <p>Ödeme Yöntemini Seçininiz:</p>
+
+          <label for="tk">Tek Çekim</label>
+          <input type="radio" name="ödeme türü" id="tk" value="Tekçekim" />
+          <label for="tak">Taksit</label>
+          <input type="radio" name="ödeme türü" id="tak" value="taksit" />
+          <label for="Hv">Cebe Havale</label>
+          <input type="radio" name="ödeme türü" id="hv" value="Havale" />
+        </div>
+        <br />
+        <label for="kutu"><a href="/">Sözleşme bilgileri</a></label>
+        <input
+          type="checkbox"
+          placeholder="Okudum Onaylıyorum"
+          id="kutu"
+        />Okudum Onaylıyorum
+        <br />
+        <!--http://127.0.0.1:5500/?isim=oguzhan&mail=okcmn&tel=0543&adres=%C4%B1st%C4%B1klal&char=thor&miktar=3&Renk=%23000000&kartisimsoyisim=oguz&kartnumaras%C4%B1=1234&g%C3%BCvenlik%C5%9Fif=1234&%C3%B6deme+t%C3%BCr%C3%BC=taksit-->
+        <button>Gönder</button>
+      </form>
+    </div>
+  </body>
+</html>
